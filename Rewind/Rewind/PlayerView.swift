@@ -15,7 +15,7 @@ struct PlayerView: View {
         VStack {
             Spacer()
             
-            AsyncImage(url: URL(string: vm.urlString)) { image in
+            AsyncImage(url: URL(string: vm.imageURLString)) { image in
                 image.resizable()
             } placeholder: {
                 Color.mint

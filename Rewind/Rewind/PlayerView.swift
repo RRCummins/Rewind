@@ -18,7 +18,8 @@ struct PlayerView: View {
             AsyncImage(url: URL(string: vm.imageURLString)) { image in
                 image.resizable()
             } placeholder: {
-                Color.mint
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(.linearGradient(Gradient(colors: [.mint, .indigo]), startPoint: .top, endPoint: .bottom))
             }
             .frame(width: 300, height: 300)
             .clipShape(RoundedRectangle(cornerRadius: 10))

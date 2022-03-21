@@ -37,10 +37,18 @@ struct PlayerView: View {
                 Image(systemName: "gobackward")
                     .resizable()
                     .frame(width: 56, height: 56)
-                
-                Image(systemName: "play.circle")
-                    .resizable()
-                    .frame(width: 84, height: 84)
+                ZStack(alignment: .center) {
+                    Circle()
+                        .frame(width: 84, height: 84)
+                        .foregroundColor(.mint)
+                    Circle()
+                        .frame(width: 84, height: 84)
+                        .foregroundColor(.indigo)
+                    
+                    Image(systemName: "play")
+                        .resizable()
+                        .frame(width: 44, height: 44)
+                }
                 
                 Image(systemName: "goforward")
                     .resizable()

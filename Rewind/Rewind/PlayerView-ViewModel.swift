@@ -13,6 +13,7 @@ extension PlayerView {
         @Published var coverImage: Image?
         @Published var imageURLString = ViewModel.advZoneFirstImageURL
         @Published var audioURLString = ViewModel.advZoneFirstAudioURL
+        @Published var progress = 0.0
         
         var audioPlayer: AVAudioPlayer?
 

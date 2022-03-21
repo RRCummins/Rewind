@@ -10,7 +10,6 @@ import SwiftUI
 struct PlayerView: View {
     @StateObject private var vm = ViewModel()
     
-    
     var body: some View {
         VStack {
             Spacer()
